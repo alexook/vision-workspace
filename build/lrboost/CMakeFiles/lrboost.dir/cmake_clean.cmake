@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/lrboost.dir/src/main.cpp.o"
-  "lrboost"
   "lrboost.pdb"
+  "lrboost"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -4,19 +4,20 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ubuntu/slambook2/myws/lrcv/src/main.cpp" "/home/ubuntu/slambook2/myws/build/lrcv/CMakeFiles/lrcv.dir/src/main.cpp.o"
+  "/home/robuntu/workspace/lrcv/src/main.cpp" "/home/robuntu/workspace/build/lrcv/CMakeFiles/lrcv.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/eigen3"
+  "/usr/include/opencv"
   "../lrcv/include"
-  "/usr/local/include/opencv4"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/robuntu/workspace/build/lrcv/CMakeFiles/test_shared_library.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

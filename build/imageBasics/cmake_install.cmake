@@ -1,4 +1,4 @@
-# Install script for directory: /home/ubuntu/slambook2/myws/imageBasics
+# Install script for directory: /home/robuntu/workspace/imageBasics
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

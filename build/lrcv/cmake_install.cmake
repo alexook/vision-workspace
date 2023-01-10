@@ -1,4 +1,4 @@
-# Install script for directory: /home/ubuntu/slambook2/myws/lrcv
+# Install script for directory: /home/robuntu/workspace/lrcv
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,5 +1,10 @@
 #include "test.h"
+#include <iostream>
+#include <vector>
+#include <string>
+#include <opencv2/opencv.hpp>
 
+using namespace std;
 
 void test_log()
 {
@@ -23,12 +28,12 @@ Yazi::TestClass::~TestClass()
 
 void Yazi::TestClass::myfun()
 {
-    string input_img_path;
+    cv::String input_img_path;
     cv::Mat img;
-    vector<string> filePaths;
+    vector<cv::String> filePaths;
 
     cv::glob("../img", filePaths, false);
-    vector<string>::iterator input_img_path_it;
+    vector<cv::String>::iterator input_img_path_it;
     for (input_img_path_it = filePaths.begin(); input_img_path_it != filePaths.end(); ++input_img_path_it)
     {
         cout << *input_img_path_it << endl;

@@ -52,7 +52,9 @@ target_include_directories(${PROJECT_NAME}
 #message(STATUS "DIRSRCS: ${DIR_SRCS}")
 
 #target_link_libraries(main PRIVATE ${test_static_library} ${OpenCV_LIBS})	ERROR ! NO${}	
-target_link_libraries(${PROJECT_NAME} ${PROJECT_SOURCE_DIR}/src/libtest_shared_library.so ${OpenCV_LIBS})
+#target_link_libraries(${PROJECT_NAME} test_shared_library ${OpenCV_LIBS})
+
+target_link_libraries(${PROJECT_NAME} test_shared_library ${OpenCV_LIBS})
 
 #target_link_libraries(main ${OpenCV_LIBS})
 

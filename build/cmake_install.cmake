@@ -1,4 +1,4 @@
-# Install script for directory: /home/ubuntu/slambook2/myws
+# Install script for directory: /home/robuntu/workspace
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,18 +38,11 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/home/ubuntu/slambook2/myws/build/imageBasics/cmake_install.cmake")
-endif()
+  # Include the install script for each subdirectory.
+  include("/home/robuntu/workspace/build/imageBasics/cmake_install.cmake")
+  include("/home/robuntu/workspace/build/lrcv/cmake_install.cmake")
+  include("/home/robuntu/workspace/build/lrboost/cmake_install.cmake")
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/home/ubuntu/slambook2/myws/build/lrcv/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/home/ubuntu/slambook2/myws/build/lrboost/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -60,5 +53,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ubuntu/slambook2/myws/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/robuntu/workspace/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

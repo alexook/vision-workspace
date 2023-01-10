@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "../../lrcv/lrcv"
-  "../../lrcv/lrcv.pdb"
   "CMakeFiles/lrcv.dir/src/main.cpp.o"
+  "../../lrcv/lrcv.pdb"
+  "../../lrcv/lrcv"
 )
 
 # Per-language clean rules from dependency scanning.

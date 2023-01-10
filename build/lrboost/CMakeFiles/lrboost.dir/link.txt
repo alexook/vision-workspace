@@ -1,1 +1,0 @@
-/usr/bin/c++  -std=c++11 -O2 -O3 -DNDEBUG  -rdynamic CMakeFiles/lrboost.dir/src/main.cpp.o  -o lrboost /usr/lib/x86_64-linux-gnu/libboost_filesystem.so /usr/lib/x86_64-linux-gnu/libboost_system.so 

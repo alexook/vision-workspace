@@ -12,6 +12,8 @@ list( APPEND STATIC_LIB_SOURCES src/test.cpp )
 set( EXE_SOURCES )
 list( APPEND EXE_SOURCES src/main.cpp )
 
+set( RUNTIME_NAME ${PROJECT_NAME}.out)
+
 message(STATUS "${STATIC_LIB_SOURCES}")
 message(STATUS "${EXE_SOURCES}")
 
@@ -40,9 +42,10 @@ target_include_directories( test_shared_library
 		${PROJECT_SOURCE_DIR}/include
 )
 
-add_executable(${PROJECT_NAME} ${EXE_SOURCES})
 
-target_include_directories(${PROJECT_NAME}
+add_executable(${RUNTIME_NAME} ${EXE_SOURCES})
+
+target_include_directories(${RUNTIME_NAME}
 		PRIVATE
 		${PROJECT_SOURCE_DIR}/include
 )
@@ -54,11 +57,11 @@ target_include_directories(${PROJECT_NAME}
 #target_link_libraries(main PRIVATE ${test_static_library} ${OpenCV_LIBS})	ERROR ! NO${}	
 #target_link_libraries(${PROJECT_NAME} test_shared_library ${OpenCV_LIBS})
 
-target_link_libraries(${PROJECT_NAME} test_shared_library ${OpenCV_LIBS})
+target_link_libraries(${RUNTIME_NAME} test_shared_library ${OpenCV_LIBS})
 
 #target_link_libraries(main ${OpenCV_LIBS})
 
 #target_compile_definitions(main PUBLIC "IS_32_BIT_ARCH")
 
-message(STATUS "${OpenCV_LIBS}")
+#message(STATUS "${OpenCV_LIBS}")
 

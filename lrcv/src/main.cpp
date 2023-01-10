@@ -2,11 +2,10 @@
 #include <opencv2/opencv.hpp>
 #include <string>
 #include <iostream>
-
-
 #include "test.h"
 
 using namespace std;
+
 string image_path = "../img/ubuntu.png";
 string catdog_path = "../img/catdog.jpg";
 

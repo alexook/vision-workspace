@@ -6,8 +6,8 @@
 
 using namespace std;
 
-string image_path = "../img/ubuntu.png";
-string catdog_path = "../img/catdog.jpg";
+string image_path = "img/ubuntu.png";
+string catdog_path = "img/catdog.jpg";
 
 int main(int argc, char **argv){
 

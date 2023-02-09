@@ -32,7 +32,7 @@ void Yazi::TestClass::myfun()
     cv::Mat img;
     vector<cv::String> filePaths;
 
-    cv::glob("../img", filePaths, false);
+    cv::glob("img", filePaths, false);
     vector<cv::String>::iterator input_img_path_it;
     for (input_img_path_it = filePaths.begin(); input_img_path_it != filePaths.end(); ++input_img_path_it)
     {

@@ -8,7 +8,6 @@ apt install ninja-build cmake
 ```
 
 ```
-mkdir build && cd build
-cmake ..
-cmake --build .
+cmake -B build -GNinja
+cmake --build build
 ```

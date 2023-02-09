@@ -5,6 +5,8 @@ set(CMAKE_BUILD_TYPE "Release")
 # 添加c++ 11标准支持
 set(CMAKE_CXX_FLAGS "-std=c++11 -O2")
 
+#SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin/${CMAKE_PROJECT_NAME})
+
 # Eigen
 include_directories("/usr/include/eigen3")
 
@@ -15,4 +17,3 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 
 add_subdirectory(imageBasics)
 add_subdirectory(lrcv)
-add_subdirectory(lrboost)

@@ -1,15 +1,18 @@
 #include <iostream>
 #include <chrono>
+#include <string>
 
 using namespace std;
 
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 
+string img_path = "img/ubuntu.png";
+
 int main(int argc, char **argv) {
   // 读取argv[1]指定的图像
   cv::Mat image;
-  image = cv::imread(argv[1]); //cv::imread函数读取指定路径下的图像
+  image = cv::imread(img_path); //cv::imread函数读取指定路径下的图像
 
   // 判断图像文件是否正确读取
   if (image.data == nullptr) { //数据不存在,可能是文件不存在

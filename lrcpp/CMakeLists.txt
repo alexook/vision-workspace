@@ -1,6 +1,7 @@
 project(lrcpp)
 
 set(CMAKE_BUILD_TYPE "Release")
+
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/../bin/${PROJECT_NAME})
 
 
@@ -14,3 +15,9 @@ target_include_directories(out1 PUBLIC ${PROJECT_SOURCE_DIR}/include)
 add_executable(out2 src/2.cpp)
 target_include_directories(out2 PUBLIC ${PROJECT_SOURCE_DIR}/include)
 
+
+add_executable(out3 src/3.cpp)
+target_include_directories(out3 PUBLIC ${PROJECT_SOURCE_DIR}/include)
+
+add_executable(out4 src/4.cpp)
+target_include_directories(out4 PUBLIC ${PROJECT_SOURCE_DIR}/include)

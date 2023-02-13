@@ -14,7 +14,7 @@ list( APPEND STATIC_LIB_SOURCES src/test.cpp )
 set( EXE_SOURCES )
 list( APPEND EXE_SOURCES src/main.cpp )
 
-set( RUNTIME_NAME ${PROJECT_NAME}.out)
+set( RUNTIME_NAME ${PROJECT_NAME})
 
 message(STATUS "${STATIC_LIB_SOURCES}")
 message(STATUS "${EXE_SOURCES}")

@@ -5,17 +5,12 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/../bin/${PROJECT_NAME})
 
 
 set( EXE_SOURCES )
-list( APPEND EXE_SOURCES src/main.cpp )
-
-set( RUNTIME_NAME ${PROJECT_NAME}.out)
 
 
-add_executable(${RUNTIME_NAME} ${EXE_SOURCES})
+add_executable(out1 src/1.cpp)
+target_include_directories(out1 PUBLIC ${PROJECT_SOURCE_DIR}/include)
 
-target_include_directories(${RUNTIME_NAME}
-		PRIVATE
-		${PROJECT_SOURCE_DIR}/include
-)
 
-target_link_libraries(${RUNTIME_NAME})
+add_executable(out2 src/2.cpp)
+target_include_directories(out2 PUBLIC ${PROJECT_SOURCE_DIR}/include)
 

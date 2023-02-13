@@ -11,7 +11,7 @@ set(CMAKE_CXX_FLAGS "-std=c++2a")
 include_directories("/usr/include/eigen3")
 
 # 寻找OpenCV库
-find_package(OpenCV 3 REQUIRED)
+find_package(OpenCV 4.2 REQUIRED)
 # 添加头文件
 include_directories(${OpenCV_INCLUDE_DIRS})
 
